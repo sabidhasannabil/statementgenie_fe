@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Statement Genie</title>
+  <link rel="icon" type="image/x-icon" href="/assets/fav_icon/fav_icon.ico">
+  <!-- Slick Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo 2:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="/css/style_main.css" rel="stylesheet" />
+  <link href="/css/animation.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- <div id="preloader">
+    <div class="loader"></div>
+  </div> -->
+  <!--Navbar start-->
+  <nav class="navbar sticky-top navbar-expand-lg background-dark nav-bradius font-Baloo-2 px-md-3 px-0">
+    <div class="container py-2">
+      <a class="navbar-brand text-whitesmoke" href="index.html"><img height="45px" src="./assets/logos/logo.svg" /></a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <img height="28px" src="/assets/icons/menu_icon.svg">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0 text-center mt-md-0 mt-4">
+          <li class="nav-item pe-md-2">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item pe-md-2">
+            <a class="nav-link" href="user_dashboard.html">Converter</a>
+          </li>
+          <li class="nav-item pe-md-2">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item pe-md-2">
+            <a class="nav-link" href="affiliate.html">Affiliate</a>
+          </li>
+          <li class="nav-item pe-md-3">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
+          <a id="signInButton" class="btn nav-button mt-md-0 mt-4" href="sign_in.html">Sign In</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Hero Section Start-->
+  <section id="heroSection" class="margin-md-top-5 margin-top-3">
+    <div class="container">
+      <div class="custom-container">
+        <!--hero asset top left-->
+        <div class="hero-top-left-asset d-md-block d-none">
+          <img class="" height="200px" src="./assets/icons/hero_top_left.webp" />
+        </div>
+        <!--hero asset top right-->
+        <div class="hero-top-right-asset">
+          <div class="wrapper background-yellowgreen-100 bradius-2 px-3 py-2">
+            <p class="dynamic-txts mb-0"><span class="me-1">1000+ Banks Support Worldwide.</span></p>
+          </div>
+        </div>
+        <!--hero headline-->
+        <div class="content-box">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-12">
+              <div class="text-center text-whitesmoke">
+                <h1 class="section-heading-lg-1 section-heading-1 fw-bold">
+                  Convert <span class="text-yellowgreen-100">PDF</span> to "<span class="text-yellowgreen-100">CSV,
+                    EXCEL</span>"<br />
+                  in Seconds, Powered by AI
+                </h1>
+                <p class="section-description mt-4">Unlock new levels and save times, with artificial intelligent.</p>
+              </div>
+              <div class="margin-md-top-4 margin-top-6 text-center">
+                <a class="btn outline-button" href="#">Try Free Today</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--hero asset bottm left-->
+        <div class="hero-bottm-left-asset">
+          <div class="d-flex">
+            <div class="ai-demo-card p-3 text-whitesmoke me-3">
+              <div class="d-flex justify-content-end">
+                <img height="46px" src="./assets/icons/ai_icon.svg" />
+              </div>
+              <div class="wrapper mt-md-5 mt-0">
+                <p class="mb-1"><span>Hey Genie</span></p>
+                <p class="dynamic-txts-2 mb-0"><span>Separate Money In.</span></p>
+              </div>
+              <!-- <p class="mb-1 mt-md-5 mt-0">Hey Genie</p> -->
+              <!-- <p class="mb-0">Separate Money In.</p> -->
+            </div>
+            <div>
+              <img class="mt-md-3" height="85px" src="./assets/icons/down_line.png" />
+            </div>
+          </div>
+        </div>
+        <!--hero asset bottm right-->
+        <div class="hero-bottm-right-asset d-md-block d-none">
+          <img class="" height="350px" src="./assets/icons/hero_bank_card.webp" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Converter Section Start-->
+  <section id="converter" class="margin-md-top-6 margin-top-4">
+    <div class="container background-whitesmoke bradius-4">
+      <h2 class="section-heading-lg-2 section-heading-2 fw-bold text-center pt-5 text-dark">Converter</h2>
+      <div class="mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-9 col-12">
+            <!--uload button start-->
+            <div class="d-md-flex flex-md-row flex-column justify-content-md-between">
+              <div class="d-md-block d-flex justify-content-center">
+                <button id="uploadBtn" class="btn primary-button d-flex align-items-center text-dark fw-medium">Upload
+                  and Preview PDF <img class="ms-2" height="28px" src="/assets/icons/upload_icon_loop.svg"> </button>
+                <input class="form-control" type="file" id="pdfUpload" accept="application/pdf" style="display:none;">
+              </div>
+              <!--convert button start-->
+              <div class="d-md-block d-flex justify-content-center mt-md-0 mt-3">
+                <button id="convertBtn" class="btn primary-button text-dark fw-medium" disabled>Convert <img
+                    class="ms-2" height="18px" src="assets/icons/ai_icon_dark.svg"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-10 col-12 mt-4">
+            <div class="pdf-box">
+              <!-- <div class="pdf-box-overlay w-100 ratio ratio-21x9"></div> -->
+              <!--pdf preview start-->
+              <div id="pdfPreview" class="mb-0 background-pdf-img bradius-4 w-100"
+                style="background-image: url(/assets/images/convert_sample.webp);">
+
+              </div>
+              <!-- Converted CSV Table -->
+              <div id="csvTable" class="mt-3 d-none"></div>
+            </div>
+          </div>
+
+          <!--ai generate start-->
+          <div class="col-md-9 col-12 mt-4">
+            <div class="background-dark p-3 bradius-6">
+              <div class="d-md-flex flex-md-row flex-column justify-content-md-between align-items-md-center px-md-3">
+                <div>
+
+                  <p class="font-Baloo-2 description mb-0 me-md-4 text-whitesmoke-50">With our user-friendly platform.
+                    Download CSV, EXCEL like <span class="text-yellowgreen-100">"Money In"</span> and <span
+                      class="text-yellowgreen-100">"Money Out"</span>. Quickly find specific records with the convenient
+                    <span class="text-yellowgreen-100">"Transaction Name"</span> filter to analyse bank.
+                    It's hassle-free and tailored to your needs.</p>
+                </div>
+                <img class="" height="48px" src="./assets/icons/converter_describe_text.webp">
+              </div>
+              <div class="mt-3 ai-input-card d-flex bradius-4">
+                <img height="auto" src="./assets/icons/ai_input_left_icon.svg">
+                <!-- Filter by AI Section -->
+                <div id="filterSection" class="input-group">
+                  <input type="text" class="form-control font-Baloo-2 border-0" id="aiFilterInput"
+                    placeholder="Separate money in" aria-label="Separate money in" aria-describedby="filter-by-ai"
+                    disabled>
+                  <button class="btn primary-button text-dark" type="button" id="filterBtn" disabled>Generate <img
+                      class="ms-2" height="18px" src="assets/icons/ai_icon_dark.svg"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-9 col-12 mt-3 mb-5">
+            <!-- Download and Send Section -->
+            <div id="downloadSendSection" class="d-none">
+              <!-- Filtered Results Download Button -->
+              <div id="filteredResultsSection" class="mt-3 d-none">
+                <button id="downloadFilteredCSVBtn" class="btn primary-button">Download Filtered Result</button>
+              </div>
+              <button id="downloadCSVBtn" class="btn primary-button mt-3 me-2">Download CSV</button>
+              <button class="btn primary-button mt-3 me-2">Download Excel</button>
+              <!-- Buttons for sending to accounting software -->
+              <button class="btn send-to-button mt-3 me-2">Send to Xero</button>
+              <button class="btn send-to-button mt-3 me-2">Send to QuickBooks</button>
+              <button class="btn send-to-button mt-3 me-2">Send to Zoho</button>
+              <button class="btn send-to-button mt-3 me-2">Send to Sage</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Choosen By Section Start-->
+  <section id="chosenBySection" class="margin-md-top-3 margin-top-2" style="overflow: hidden">
+    <p class="text-whitesmoke text-center">Chosen By World’s <span class="text-yellowgreen-100">1500+</span> Amazing
+      Companies</p>
+    <div class="container mt-5">
+      <!-- Horizontal Logo Slider -->
+      <div id="" class="logo-carousel">
+        <!-- Logo items here -->
+        <div class="logo-item me-5">
+          <img height="30px" src="/assets/companies_logo/fortunearc.svg" />
+        </div>
+        <div class="logo-item me-5">
+          <img height="30px" src="/assets/companies_logo/fortunearc.svg" />
+        </div>
+        <div class="logo-item me-5">
+          <img height="30px" src="/assets/companies_logo/fortunearc.svg" />
+        </div>
+        <div class="logo-item me-5">
+          <img height="30px" src="/assets/companies_logo/fortunearc.svg" />
+        </div>
+        <div class="logo-item me-5">
+          <img height="30px" src="/assets/companies_logo/fortunearc.svg" />
+        </div>
+        <div class="logo-item me-5">
+          <img height="30px" src="/assets/companies_logo/fortunearc.svg" />
+        </div>
+        <div class="logo-item me-5">
+          <img height="30px" src="/assets/companies_logo/fortunearc.svg" />
+        </div>
+        <div class="logo-item me-5">
+          <img height="30px" src="/assets/companies_logo/fortunearc.svg" />
+        </div>
+        <div class="logo-item me-5">
+          <img height="30px" src="/assets/companies_logo/fortunearc.svg" />
+        </div>
+        <div class="logo-item me-5">
+          <img height="30px" src="/assets/companies_logo/fortunearc.svg" />
+        </div>
+        <div class="logo-item me-5">
+          <img height="30px" src="/assets/companies_logo/fortunearc.svg" />
+        </div>
+        <div class="logo-item me-5">
+          <img height="30px" src="/assets/companies_logo/fortunearc.svg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Thousand Plus Bank Section Start-->
+  <section id="" class="margin-md-top-4 margin-top-3">
+    <div class="container px-md-0 px-2 custom-bg">
+      <img class="background-color" height="120px" src="/assets/icons/yellowgreen-100.svg" />
+      <div class="custom-card-1">
+        <div class="ps-md-4 ps-3 pe-md-0 pe-3" style="overflow: hidden">
+          <div class="row">
+            <div class="col-md-6 col-12 d-flex align-items-center pe-md-5">
+              <div class="mt-md-0 mt-5">
+                <h2 class="section-heading-lg-2 section-heading-2 text-whitesmoke fw-bold">
+                  Works With <br />
+                  <span class="text-yellowgreen-100">Thousand Plus</span> Banks Worldwide.
+                </h2>
+                <p class="text-whitesmoke section-description fw-light mt-4">
+                  Experience seamless integration with over a thousand banks worldwide. Our platform ensures
+                  compatibility
+                  with a vast network of financial institutions, offering unmatched accessibility for effortless bank
+                  statement conversion. Whether local or international, rest assured our solution meets your needs
+                  hassle-free.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 mt-md-0 mt-4">
+              <div class="bank-carousel-box">
+
+                <div class="carousel-bt-box">
+                  <!-- Vertical Slider (Bottom to Top) -->
+                  <div class="bottom-top-container">
+                    <div class="slider"
+                      data-slick='{"slidesToScroll": 1, "autoplay": true, "autoplaySpeed": 0, "speed": 3000, "cssEase": "linear",  "slidesToShow": 5, "vertical":true, "dots":false,"arrows":false}'>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/ubs_hong_kong_bank.png" />
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">UBS Hong Kong</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>Hong Kong</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/bank_of_america.png">
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">Bank of America</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>United States</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img width="32" src="/assets/banks_logo/national_australian_bank.png">
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">National Australian bank</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>Australia</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/zurich_cantonal_bank.png">
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">Zurich Cantonal Bank</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>Switzerland</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/santander_bank.png">
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">Santander Bank</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>United States</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/metro_bank.png" />
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">Metro Bank</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>United Kingdom</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/united_overseas_bank.png" />
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">United Overseas Bank</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>Singapore</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/bendigo_bank.png" />
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">Bendigo Bank</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>Australia</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/royal_bank_of_scotland.png" />
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">Royal Bank of Scotland</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>United Kingdom</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/banque_cantonale_vaudoise.png" />
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">Banque Cantonale Vaudoise</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>Switzerland</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/monzo.png" />
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">Monzo</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>United Kingdom</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-tb-box">
+                  <!-- Vertical Slider (Top to Bottom) -->
+                  <div class="top-bottom-container">
+                    <div class="slider"
+                      data-slick='{"slidesToScroll": 1, "autoplay": true, "autoplaySpeed": 0, "speed": 3000, "cssEase": "linear",  "slidesToShow": 5, "vertical":true, "dots":false,"arrows":false}'>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/credit_suisse_bank.png" />
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">Credit Suisse Bank</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>Switzerland</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/dbs_group.png" />
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">DBS Group</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>Singapore</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/nat_west.png" />
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">NatWest</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>United Kingdom</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/chase_bank.png" />
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">Chase Bank</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>United States</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/bank_of_nova_scotia.png">
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">Bank of Nova Scotia</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>Canada</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/barclays_bank.png" />
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">Barclays</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>United Kingdom</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/hsbc.png">
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">HSBC</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>Multinational</small></p>
+                        </div>
+                      </div>
+                      <div class="card bank-carousel-card mb-3">
+                        <div class="card-body p-4">
+                          <img height="32" src="/assets/banks_logo/bank_of_singapore.png" />
+                          <h6 class="card-title text-whitesmoke mb-1 mt-4">Bank Of Singapore</h6>
+                          <p class="card-text fw-light text-whitesmoke-50 mb-0"><small>Singapore</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Client Feedback Section Start-->
+  <section id="clientFeedbackSection" class="margin-md-top-4 margin-top-3" style="overflow: hidden">
+    <div class="container">
+      <h2 class="section-heading-lg-2 section-heading-2 fw-bold text-center pt-5 text-whitesmoke">Clients Feedback</h2>
+    </div>
+    <div class="">
+      <div class="testimonial-slider-container mt-5">
+        <div class="testim slider"
+          data-slick='{"slidesToShow": 3.2,"autoplay":true,"autoplaySpeed": 0, "speed": 12000, "cssEase": "linear","dots":false,"arrows":false,"responsive":[{"breakpoint": 768,"settings": {"slidesToShow": 2}},{"breakpoint": 576,"settings": {"slidesToShow": 1}}]}'>
+
+          <div class="testimonial-card background-yellowgreen-100 text-dark p-md-4 p-3 me-3">
+            <div class="position-relative h-100">
+              <p class="fw-normal description">
+                <span class="display-5 m-0">"</span>Impressive platform! It effortlessly converts statements from my
+                bank, making financial management easier. It's a must-have tool for anyone looking to streamline their
+                banking tasks efficiently.
+              </p>
+              <div class="position-absolute bottom-0">
+                <div class="d-flex align-items-center">
+                  <img class="user-icon bradius-1 me-3" src="/assets/icons/user_icon.webp" />
+                  <div>
+                    <h5 class="mb-1">Sabid Hasan Nabil</h5>
+                    <h6 class="mb-0"><small>Senior UX/UI Designer</small></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card text-whitesmoke-50 p-md-4 p-3 me-3">
+            <div class="position-relative h-100">
+              <p class="fw-normal description">
+                <span class="display-5 m-0">"</span>Exceptional solution! Simplified my financial tasks with seamless
+                statement conversion. Highly recommended for its efficiency. It has truly streamlined my workflow and
+                exceeded my expectations.
+              </p>
+              <div class="position-absolute bottom-0">
+                <div class="d-flex align-items-center">
+                  <img class="user-icon bradius-1 me-3" src="/assets/icons/user_icon.webp" />
+                  <div class="text-whitesmoke">
+                    <h5 class="mb-1">Sabid Hasan Nabil</h5>
+                    <h6 class="mb-0"><small>Senior UX/UI Designer</small></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card text-whitesmoke-50 p-md-4 p-3 me-3">
+            <div class="position-relative h-100">
+              <p class="fw-normal description">
+                <span class="display-5 m-0">"</span>Fantastic tool! Made converting statements a breeze, saving me
+                valuable time. Couldn't be happier with the results. It's truly transformed the way I manage my
+                finances, and I highly recommend it to anyone seeking efficiency.
+              </p>
+              <div class="position-absolute bottom-0">
+                <div class="d-flex align-items-center">
+                  <img class="user-icon bradius-1 me-3" src="/assets/icons/user_icon.webp" />
+                  <div class="text-whitesmoke">
+                    <h5 class="mb-1">Sabid Hasan Nabil</h5>
+                    <h6 class="mb-0"><small>Senior UX/UI Designer</small></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card text-whitesmoke-50 p-md-4 p-3 me-3">
+            <div class="position-relative h-100">
+              <p class="fw-normal description">
+                <span class="display-5 m-0">"</span>Outstanding service! Effortlessly converts statements, making
+                financial management a breeze. A must-have for anyone seeking convenience. Its user-friendly interface
+                and reliability make it indispensable.
+              </p>
+              <div class="position-absolute bottom-0">
+                <div class="d-flex align-items-center">
+                  <img class="user-icon bradius-1 me-3" src="/assets/icons/user_icon.webp" />
+                  <div class="text-whitesmoke">
+                    <h5 class="mb-1">Sabid Hasan Nabil</h5>
+                    <h6 class="mb-0"><small>Senior UX/UI Designer</small></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card text-whitesmoke-50 p-md-4 p-3 me-3">
+            <div class="position-relative h-100">
+              <p class="fw-normal description">
+                <span class="display-5 m-0">"</span>Impressive performance! This platform revolutionized my banking
+                tasks. A reliable solution for smooth operations. Its efficiency saved me time and stress, making it
+                invaluable in my daily routine.
+              </p>
+              <div class="position-absolute bottom-0">
+                <div class="d-flex align-items-center">
+                  <img class="user-icon bradius-1 me-3" src="/assets/icons/user_icon.webp" />
+                  <div class="text-whitesmoke">
+                    <h5 class="mb-1">Sabid Hasan Nabil</h5>
+                    <h6 class="mb-0"><small>Senior UX/UI Designer</small></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Features Section Start-->
+  <section id="featureSection" class="margin-md-top-4 margin-top-3">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7 col-12 text-center">
+          <h2 class="section-heading-lg-2 section-heading-2 fw-bold text-whitesmoke pt-5">Innovative Features for Even
+            More Efficiency
+          </h2>
+          <p class="section-description text-whitesmoke-50">Designed to save you hours of work in the long run.</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4 col-12 mt-3">
+          <div class="custom-bg h-100">
+            <img class="background-color" height="100px" src="/assets/icons/yellowgreen-100.svg" />
+            <div class="card custom-card-1 h-100">
+              <div class="card-body p-4">
+                <img height="36px" src="/assets/icons/time_save.svg" />
+                <div class="mt-3">
+                  <h4 class="text-whitesmoke">Time Save</h4>
+                  <p class="mb-0 description fw-light text-whitesmoke-50">Time-saving feature streamlines banking tasks,
+                    optimizing efficiency for users' convenience and productivity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 mt-3">
+          <div class="custom-bg h-100">
+            <img class="background-color" height="100px" src="/assets/icons/yellowgreen-100.svg" />
+            <div class="card custom-card-1 h-100">
+              <div class="card-body p-4">
+                <img height="36px" src="/assets/icons/ai_copilot.svg" />
+                <div class="mt-3">
+                  <h4 class="text-whitesmoke">AI Copilot</h4>
+                  <p class="mb-0 description fw-light text-whitesmoke-50">AI Copilot aids decision-making, offering
+                    intelligent insights for smoother financial management.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 mt-3">
+          <div class="custom-bg h-100">
+            <img class="background-color" height="100px" src="/assets/icons/yellowgreen-100.svg" />
+            <div class="card custom-card-1 h-100">
+              <div class="card-body p-4">
+                <img height="36px" src="/assets/icons/data_formating.svg" />
+                <div class="mt-3">
+                  <h4 class="text-whitesmoke">Clean Data Formatting</h4>
+                  <p class="mb-0 description fw-light text-whitesmoke-50">Clean Data Format ensures organized, readable
+                    statements, simplifying analysis for financial management.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-md-2">
+        <div class="col-md-4 col-12 mt-3">
+          <div class="custom-bg h-100">
+            <img class="background-color" height="100px" src="/assets/icons/yellowgreen-100.svg" />
+            <div class="card custom-card-1 h-100">
+              <div class="card-body p-4">
+                <img height="36px" src="/assets/icons/security.svg" />
+                <div class="mt-3">
+                  <h4 class="text-whitesmoke">Highest Security</h4>
+                  <p class="mb-0 description fw-light text-whitesmoke-50">Highest Security ensures robust protection,
+                    safeguarding sensitive financial data with advanced encryption.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 mt-3">
+          <div class="custom-bg h-100">
+            <img class="background-color" height="100px" src="/assets/icons/yellowgreen-100.svg" />
+            <div class="card custom-card-1 h-100">
+              <div class="card-body p-4">
+                <img height="36px" src="/assets/icons/banks.svg" />
+                <div class="mt-3">
+                  <h4 class="text-whitesmoke">Supports 1,000+ Banks</h4>
+                  <p class="mb-0 description fw-light text-whitesmoke-50">Supports 1,000+ Banks ensures compatibility
+                    with a vast network for seamless transactions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 mt-3">
+          <div class="custom-bg h-100">
+            <img class="background-color" height="100px" src="/assets/icons/yellowgreen-100.svg" />
+            <div class="card custom-card-1 h-100">
+              <div class="card-body p-4">
+                <img height="36px" src="/assets/icons/export_option.svg" />
+                <div class="mt-3">
+                  <h4 class="text-whitesmoke">Flexible Export Options</h4>
+                  <p class="mb-0 description fw-light text-whitesmoke-50">Flexible Export Options empower users to
+                    customize and optimize their data management processes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Integration Section-->
+  <section id="" class="margin-md-top-3 margin-top-2 px-md-0 px-2">
+    <div class="container background-yellowgreen-100 bradius-4">
+      <div class="px-3 py-4 text-whitesmoke">
+        <h2 class="section-heading-lg-2 section-heading-2 fw-bold">Seamless Integration With <br />Accounting Softwares
+        </h2>
+        <div class="row mt-3">
+          <div class="col-md-2 col-6 mt-3">
+            <div class="background-dark p-3 d-flex justify-content-center bradius-3">
+              <img height="50" src="/assets/icons/xero.svg" />
+            </div>
+          </div>
+          <div class="col-md-2 col-6 mt-3">
+            <div class="background-dark p-3 d-flex justify-content-center bradius-3">
+              <img height="50" src="/assets/icons/hbd.svg" />
+            </div>
+          </div>
+          <div class="col-md-2 col-6 mt-3">
+            <div class="background-dark p-3 d-flex justify-content-center bradius-3">
+              <img height="50" src="/assets/icons/qb.svg" />
+            </div>
+          </div>
+          <div class="col-md-2 col-6 mt-3">
+            <div class="background-dark p-3 d-flex justify-content-center bradius-3">
+              <img height="50" src="/assets/icons/sage.svg" />
+            </div>
+          </div>
+          <div class="col-md-2 col-6 mt-3">
+            <div class="background-dark p-3 d-flex justify-content-center bradius-3">
+              <img height="50" src="/assets/icons/zoho.svg" />
+            </div>
+          </div>
+          <div class="col-md-2 col-6 mt-3">
+            <a class="background-whitesmoke h-100 p-3 d-flex justify-content-center align-items-center text-decoration-none text-dark bradius-3"
+              href="#">Try Free Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Frequently Asked Questions Section Start-->
+  <section id="faqSection" class="margin-md-top-5 margin-top-3">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7 col-12 text-center">
+          <h2 class="section-heading-lg-2 section-heading-2 fw-bold text-whitesmoke">Frequently Asked Questions</h2>
+          <p class="section-description text-whitesmoke-50">Designed to save you hours of work in the long run.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5 text-whitesmoke">
+        <div class="col-md-8 col-12">
+          <div class="faq-question bradius-4" onclick="toggleFAQ(this)">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="mb-0 me-3">What file formats does the platform support for statement conversion?</h5>
+              <span class="faq-icon"><img src="/assets/icons/plus_icon.svg" alt="toggle" /></span>
+            </div>
+            <div class="faq-answer bradius-2 mt-4">
+              <p class="mb-0 description text-whitesmoke-50">The platform supports a wide range of file formats,
+                including PDF and more.</p>
+            </div>
+          </div>
+
+          <div class="faq-question bradius-4 mt-4" onclick="toggleFAQ(this)">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="mb-0 me-3">Is my financial data secure on the platform?</h5>
+              <span class="faq-icon"><img src="/assets/icons/plus_icon.svg" alt="toggle" /></span>
+            </div>
+            <div class="faq-answer mt-4 bradius-2">
+              <p class="mb-0 description text-whitesmoke-50">Yes, we prioritize the security of your data. We use
+                advanced encryption and adhere to strict security protocols to safeguard your information.</p>
+            </div>
+          </div>
+
+          <div class="faq-question bradius-4 mt-4" onclick="toggleFAQ(this)">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="mb-0 me-3">Can I use the platform for both personal and business banking statements?</h5>
+              <span class="faq-icon"><img src="/assets/icons/plus_icon.svg" alt="toggle" /></span>
+            </div>
+            <div class="faq-answer mt-4 bradius-2">
+              <p class="mb-0 description text-whitesmoke-50">Absolutely! The platform is designed to accommodate both
+                personal and business banking needs.</p>
+            </div>
+          </div>
+
+          <div class="faq-question bradius-4 mt-4" onclick="toggleFAQ(this)">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="mb-0 me-3">How long does it take to convert a bank statement?</h5>
+              <span class="faq-icon"><img src="/assets/icons/plus_icon.svg" alt="toggle" /></span>
+            </div>
+            <div class="faq-answer mt-4 bradius-2">
+              <p class="mb-0 description text-whitesmoke-50">The conversion process is quick and efficient. Most
+                statements are processed within seconds, but it may vary depending on the file size and complexity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Footer Section Start-->
+  <footer id="footer" class="margin-md-top-5 margin-top-3 custom-bg">
+    <img class="background-color" height="30px" src="/assets/icons/yellowgreen-100.svg" />
+    <img class="background-color-2" height="30px" src="/assets/icons/yellowgreen-100.svg" />
+    <img class="background-color-3" height="30px" src="/assets/icons/yellowgreen-100.svg" />
+    <div class="footer-background-card py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="footer-card bradius-4 h-100 p-4">
+              <div>
+                <a href="#"><img height="40px" src="/assets/logos/logo.svg" /></a>
+              </div>
+              <div class="text-whitesmoke mt-4">
+                <h5 class="">Subscribe</h5>
+                <p class="mb-0 fw-light">Join our newsletter to stay up to date on features and releases.
+                </p>
+                <div class="input-group background-whitesmoke p-1 bradius-4 my-2">
+                  <input type="text" class="form-control font-Baloo-2 border-0 footer-input-email"
+                    placeholder="Enter your email address" aria-label="Enter your email address"
+                    aria-describedby="button-addon2" />
+                  <button class="btn primary-button text-dark" type="button" id="button-addon2">Subscribe</button>
+                </div>
+                <span class="fw-light">By subscribing you to agree to with our <a class="text-whitesmoke"
+                    href="#">Privacy Policy</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12 mt-md-0 mt-4">
+            <div class="footer-card bradius-4 h-100 p-4">
+              <h4 class="text-whitesmoke">Product</h4>
+              <ul class="list-unstyled mt-4">
+                <li class="mt-2"><a class="footer-link" href="#">Converter</a></li>
+                <li class="mt-2"><a class="footer-link" href="pricing.html">Pricing</a></li>
+                <li class="mt-2"><a class="footer-link" href="affiliate.html">Affiliate</a></li>
+                <li class="mt-2"><a class="footer-link" href="blogs.html">Blogs</a></li>
+                <li class="mt-2"><a class="footer-link" href="sign_in.html">Sign In</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-12 mt-md-0 mt-4">
+            <div class="footer-card bradius-4 h-100 p-4">
+              <h4 class="text-whitesmoke">Company</h4>
+              <ul class="list-unstyled mt-4">
+                <li class="mt-2"><a class="footer-link" href="about.html">About Us</a></li>
+                <li class="mt-2"><a class="footer-link" href="privacy_policy.html">Privacy Policy</a></li>
+                <li class="mt-2"><a class="footer-link" href="terms_of_service.html">Terms of Service</a></li>
+                <li class="mt-2"><a class="footer-link" href="support.html">Support</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 mt-4">
+            <div class="footer-card bradius-4 h-100 p-4">
+              <div
+                class="row flex-md-row flex-column justify-content-md-between justify-content-center align-items-center flex-column-reverse">
+                <div class="col-auto mt-md-0 mt-4">
+                  <span class="text-whitesmoke-50 description">&copy; 2024 "Statement Genie"</span>
+                </div>
+                <div class="col-auto">
+                  <a href="" class="me-2"><img height="36px" src="/assets/icons/facebook.svg"></a>
+                  <a href="" class="me-2"><img height="36px" src="/assets/icons/twitter.svg"></a>
+                  <a href="" class="me-2"><img height="36px" src="/assets/icons/linkedin.svg"></a>
+                  <a href="" class=""><img height="36px" src="/assets/icons/g2.svg"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="btn back-top-button" title="Back to Top">
+    <img height="48px" class="floating" src="/assets/icons/top_icon.svg">
+  </button>
+
+
+  <!-- <script src="/js/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <!-- Include the PDF.js library from a CDN for simplicity -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
+  <!-- Link to your JavaScript file -->
+  <script src="js/style_main.js"></script>
+  <script src="js/upload_preview.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statement Genie</title>
+    <link rel="icon" type="image/x-icon" href="/assets/fav_icon/fav_icon.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo 2:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="/css/style_main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--Navbar start-->
+    <nav class="navbar sticky-top navbar-expand-lg background-dark nav-bradius font-Baloo-2 px-md-3 px-0">
+        <div class="container py-2">
+            <a class="navbar-brand text-whitesmoke" href="#"><img height="45px" src="./assets/logos/logo.svg"></a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img height="28px" src="/assets/icons/menu_icon.svg">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 text-center mt-md-0 mt-4">
+                    <li class="nav-item pe-md-2 ">
+                        <a class="nav-link active" aria-current="page" href="user_dashboard.html">Converter</a>
+                    </li>
+                    <li class="nav-item pe-md-2">
+                        <a class="nav-link" href="history.html">History</a>
+                    </li>
+                    <button id="signInButton" class="btn nav-button mt-md-0 mt-4 me-md-3">Account</button>
+                    <button id="signOutButton" class="btn nav-outline-button mt-md-0 mt-4">Sign Out</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Dashboard Body Start-->
+    <div class="container">
+        <div class="background-whitesmoke bradius-4 px-md-0 px-2">
+            <h2 class="section-heading-lg-2 section-heading-2 fw-bold text-center pt-5 text-dark">Converter</h2>
+            <div class="mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-9 col-12">
+                        <!--uload button start-->
+                        <div class="d-md-flex flex-md-row flex-column justify-content-md-between">
+                            <div class="d-md-block d-flex justify-content-center">
+                                <button id="uploadBtn" class="btn primary-button">Upload and Preview PDF</button>
+                                <input class="form-control" type="file" id="pdfUpload" accept="application/pdf"
+                                    style="display:none;">
+                            </div>
+                            <!--convert button start-->
+                            <div class="d-md-block d-flex justify-content-center mt-md-0 mt-3">
+                                <button id="convertBtn" class="btn primary-button text-dark" disabled>Convert <img
+                                        class="ms-2" height="18px" src="assets/icons/ai_icon_dark.svg"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-10 col-12 mt-4">
+                        <div class="pdf-box">
+                            <!-- <div class="pdf-box-overlay w-100 ratio ratio-21x9"></div> -->
+                            <!--pdf preview start-->
+                            <div id="pdfPreview" class="mb-0 background-pdf-img bradius-4 w-100" style="background-image: url(/assets/images/convert_sample.webp);">
+
+                            </div>
+                            <!-- Converted CSV Table -->
+                            <div id="csvTable" class="mt-3 d-none"></div>
+                        </div>
+                    </div>
+
+                    <!--ai generate start-->
+                    <div class="col-md-9 col-12 mt-4">
+                        <div class="background-dark p-3 bradius-6">
+                            <div
+                                class="d-md-flex flex-md-row flex-column justify-content-md-between align-items-md-center px-md-3">
+                                <div>
+                                    <p class="font-Baloo-2 description mb-0 me-md-4 text-whitesmoke-50">With our
+                                        user-friendly platform.
+                                        Download CSV, EXCEL like <span class="text-yellowgreen-100">"Money In"</span>
+                                        and <span class="text-yellowgreen-100">"Money Out"</span> with ease, or simply
+                                        use the <span class="text-yellowgreen-100">"Transaction Name"</span> filter to
+                                        quickly find specific records.
+                                        It's hassle-free and tailored to your needs.</p>
+                                </div>
+                                <img class="" height="48px" src="./assets/icons/converter_describe_text.webp">
+                            </div>
+                            <div class="mt-3 ai-input-card d-flex bradius-4">
+                                <img height="auto" src="./assets/icons/ai_input_left_icon.svg">
+                                <!-- Filter by AI Section -->
+                                <div id="filterSection" class="input-group">
+                                    <input type="text" class="form-control font-Baloo-2 border-0" id="aiFilterInput"
+                                        placeholder="Separate money in" aria-label="Separate money in"
+                                        aria-describedby="filter-by-ai" disabled>
+                                    <button class="btn primary-button text-dark" type="button" id="filterBtn"
+                                        disabled>Generate <img class="ms-2" height="18px"
+                                            src="assets/icons/ai_icon_dark.svg"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 col-12 mt-3 mb-5">
+                        <!-- Download and Send Section -->
+                        <div id="downloadSendSection" class="d-none">
+                            <!-- Filtered Results Download Button -->
+                            <div id="filteredResultsSection" class="mt-3 d-none">
+                                <button id="downloadFilteredCSVBtn" class="btn primary-button">Download Filtered
+                                    Result</button>
+                            </div>
+                            <button id="downloadCSVBtn" class="btn primary-button mt-3 me-2">Download CSV</button>
+                            <button class="btn primary-button mt-3 me-2">Download Excel</button>
+                            <!-- Buttons for sending to accounting software -->
+                            <button class="btn send-to-button mt-3 me-2">Send to Xero</button>
+                            <button class="btn send-to-button mt-3 me-2">Send to QuickBooks</button>
+                            <button class="btn send-to-button mt-3 me-2">Send to Zoho</button>
+                            <button class="btn send-to-button mt-3 me-2">Send to Sage</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Section Start-->
+    <footer id="footer" class="margin-md-top-5 margin-top-3 custom-bg">
+        <img class="background-color" height="30px" src="/assets/icons/yellowgreen-100.svg" />
+        <img class="background-color-2" height="30px" src="/assets/icons/yellowgreen-100.svg" />
+        <img class="background-color-3" height="30px" src="/assets/icons/yellowgreen-100.svg" />
+        <div class="footer-background-card py-4">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="footer-card bradius-4 h-100 p-4">
+                <div>
+                    <a href="#"><img height="40px" src="/assets/logos/logo.svg" /></a>
+                </div>
+                <div class="text-whitesmoke mt-4">
+                    <h5 class="">Subscribe</h5>
+                    <p class="mb-0 fw-light">Join our newsletter to stay up to date on features and releases.
+                    </p>
+                    <div class="input-group background-whitesmoke p-1 bradius-4 my-2">
+                    <input type="text" class="form-control font-Baloo-2 border-0 footer-input-email"
+                        placeholder="Enter your email address" aria-label="Enter your email address"
+                        aria-describedby="button-addon2" />
+                    <button class="btn primary-button text-dark" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                    <span class="fw-light">By subscribing you to agree to with our <a class="text-whitesmoke"
+                        href="#">Privacy Policy</a></span>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12 mt-md-0 mt-4">
+                <div class="footer-card bradius-4 h-100 p-4">
+                <h4 class="text-whitesmoke">Product</h4>
+                <ul class="list-unstyled mt-4">
+                    <li class="mt-2"><a class="footer-link" href="#">Converter</a></li>
+                    <li class="mt-2"><a class="footer-link" href="pricing.html">Pricing</a></li>
+                    <li class="mt-2"><a class="footer-link" href="affiliate.html">Affiliate</a></li>
+                    <li class="mt-2"><a class="footer-link" href="blogs.html">Blogs</a></li>
+                    <li class="mt-2"><a class="footer-link" href="sign_in.html">Sign In</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-12 mt-md-0 mt-4">
+                <div class="footer-card bradius-4 h-100 p-4">
+                <h4 class="text-whitesmoke">Company</h4>
+                <ul class="list-unstyled mt-4">
+                    <li class="mt-2"><a class="footer-link" href="about.html">About Us</a></li>
+                    <li class="mt-2"><a class="footer-link" href="privacy_policy.html">Privacy Policy</a></li>
+                    <li class="mt-2"><a class="footer-link" href="terms_of_service.html">Terms of Service</a></li>
+                    <li class="mt-2"><a class="footer-link" href="support.html">Support</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <div class="footer-card bradius-4 h-100 p-4">
+                <div
+                    class="row flex-md-row flex-column justify-content-md-between justify-content-center align-items-center flex-column-reverse">
+                    <div class="col-auto mt-md-0 mt-4">
+                    <span class="text-whitesmoke-50 description">&copy; 2024 "Statement Genie"</span>
+                    </div>
+                    <div class="col-auto">
+                    <a href="" class="me-2"><img height="36px" src="/assets/icons/facebook.svg"></a>
+                    <a href="" class="me-2"><img height="36px" src="/assets/icons/twitter.svg"></a>
+                    <a href="" class="me-2"><img height="36px" src="/assets/icons/linkedin.svg"></a>
+                    <a href="" class=""><img height="36px" src="/assets/icons/g2.svg"></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- Include the PDF.js library from a CDN for simplicity -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
+    <!-- Link to your JavaScript file -->
+    <script src="js/style_main.js"></script>
+    <script src="js/upload_preview.js"></script>
+</body>
+
+</html>

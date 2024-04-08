@@ -1,0 +1,158 @@
+/* .wrapper{
+    display: flex;
+  } */
+.dynamic-txts {
+    overflow: hidden;
+}
+
+.dynamic-txts span {
+    position: relative;
+    top: 0;
+    animation: slide 5s steps(1) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txts span {
+    position: relative;
+}
+
+.dynamic-txts span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-top: 3px;
+    height: 100%;
+    width: 100%;
+    background: var(--color-yellowgreen-100);
+    border-left: 2px solid var(--color-dark);
+    animation: typing 8s steps(30) infinite;
+}
+
+@keyframes typing {
+
+    30%,
+    40% {
+        left: calc(100% + 0px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.dynamic-txts-2 {
+    overflow: hidden;
+}
+
+.dynamic-txts-2 span {
+    position: relative;
+    top: 0;
+    animation: slide 5s steps(1) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txts-2 span {
+    position: relative;
+}
+
+.dynamic-txts-2 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-top: 4px;
+    height: 100%;
+    width: 100%;
+    background: var(--color-yellowgreen-100);
+    border-left: 2px solid var(--color-whitesmoke);
+    animation: typing 8s steps(18) infinite;
+}
+
+@keyframes typing {
+
+    30%,
+    60% {
+        left: calc(100% + 0px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+/*Back to top button*/
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+/*Preloader */
+body:not(.loaded) .body {
+    display: none;
+}
+
+body.loaded .body {
+    display: block;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-dark);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    border: 5px solid var(--color-dark);
+    border-top: 6px solid var(--color-yellowgreen-100);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* This will hide the preloader once the page is loaded */
+body.loaded #preloader {
+    display: none;
+}
