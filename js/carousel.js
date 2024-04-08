@@ -12,5 +12,3 @@ $(".slider").each(function () {
 // $(".slider").each(function() {
 //     $(this).slick($(this).data());
 // });
-
-

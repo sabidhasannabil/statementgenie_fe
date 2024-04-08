@@ -694,9 +694,11 @@ body::-webkit-scrollbar-thumb {
 .logo-carousel::-webkit-scrollbar {
   display: none;
 }
+
 .logo-item img {
   opacity: 0.3;
 }
+
 /*bank card slider*/
 .bank-carousel-box {
   position: relative;
@@ -826,6 +828,7 @@ body::-webkit-scrollbar-thumb {
 .footer-input-email {
   margin-right: 5px;
 }
+
 /*back to top button*/
 #back-to-top {
   position: fixed;

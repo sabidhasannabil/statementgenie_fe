@@ -19,7 +19,7 @@ function toggleFAQ(element) {
     icon.src = "/assets/icons/plus_icon.svg";
   } else {
     answer.style.display = "none";
-    icon.src = "/assets/icons/plus_icon.svg"; 
+    icon.src = "/assets/icons/plus_icon.svg";
   }
 }
 
@@ -37,7 +37,7 @@ function toggleFAQ(element) {
 
 
 // Show or hide the back-to-top button based on scroll position
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   var backToTopButton = document.getElementById('back-to-top');
   // Check if the viewport width is more than 768px for non-mobile devices
   if (window.innerWidth > 768) {
@@ -53,7 +53,7 @@ window.addEventListener('scroll', function() {
 });
 
 // Smooth scroll to top when back-to-top button is clicked
-document.getElementById('back-to-top').addEventListener('click', function() {
+document.getElementById('back-to-top').addEventListener('click', function () {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
