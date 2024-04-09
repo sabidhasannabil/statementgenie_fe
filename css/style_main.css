@@ -7,19 +7,19 @@
  */
 @font-face {
   font-family: "Facebook Sans";
-  src: url("/css/fonts/FacebookSansLight.ttf");
+  src: url("../css/fonts/FacebookSansLight.ttf");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Facebook Sans";
-  src: url("/css/fonts/FacebookSansRegular.ttf");
+  src: url("../css/fonts/FacebookSansRegular.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Facebook Sans";
-  src: url("/css/fonts/FacebookSansBold.ttf");
+  src: url("../css/fonts/FacebookSansBold.ttf");
   font-weight: 700;
 }
 
