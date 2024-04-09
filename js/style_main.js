@@ -16,10 +16,10 @@ function toggleFAQ(element) {
   // Toggle the current FAQ and icon
   if (isActive) {
     answer.style.display = "block";
-    icon.src = "/assets/icons/plus_icon.svg";
+    icon.src = "./assets/icons/plus_icon.svg";
   } else {
     answer.style.display = "none";
-    icon.src = "/assets/icons/plus_icon.svg";
+    icon.src = "./assets/icons/plus_icon.svg";
   }
 }
 
