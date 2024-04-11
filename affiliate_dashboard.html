@@ -30,9 +30,8 @@
                     </nav>
                 </div>
             </div>
-
             <!--Right Side Menu Start-->
-            <div class="right-item-box d-md-block d-none h-100">
+            <div class="right-item-box d-lg-block d-none h-100">
                 <div class="h-100">
 
                     <div class="card blog-card">
@@ -108,16 +107,207 @@
             </div>
         </div>
     </section>
+
     <!--Main Body Content Start-->
     <section id="bodyContent">
         <div class="main-container">
             <!--Nav Bar Start-->
-            <div class="d-flex justify-content-between">
-                <button id="menuButton" class="btn menu-button py-2 px-3 text-uppercase d-flex align-items-center p-0"><img class="icon me-2" height="24px" src="./assets/icons/menu_icon_light.svg">Menu</button>
-                <a class="" href="#"><img class="affiliate-user-icon bradius-2" height="42px" src="./assets/icons/user_icon.webp"></a>
+            <div class="d-flex flex-lg-row flex-row-reverse justify-content-between sticky-top background-whitesmoke pt-4 pb-3">
+                <div class="col-auto">
+                    <button id="menuButton" class="btn menu-button py-2 px-3 text-uppercase d-flex align-items-center p-0"><img class="icon me-2" height="24px" src="./assets/icons/menu_icon_light.svg">Menu</button>
+                </div>
+                <div class="col-auto">
+                    <a class="" href="#"><img class="affiliate-user-icon bradius-2" height="42px" src="./assets/icons/user_icon.webp"></a>
+                </div>
             </div>
 
             <!--Dashboard Content Start-->
+            <div class="d-md-flex justify-content-between align-items-center background-dark text-whitesmoke bradius-5 p-4 mt-4">
+                <h3 class="mb-0">Welcome Back Sabid</h3>
+                <div class="btn-group d-flex flex-md-row flex-column mt-md-0 mt-4">
+                    <input type="text" value="https://www.example.com" id="urlField" class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3">
+                    <button class="btn primary-button w-100 text-dark bradius-2 mt-md-0 mt-3" onclick="copyURL()">Copy & Share</button>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <h4 class="fw-semibold text-dark">Last 30 Days</h4>
+                <!--Referrals Card-->
+                <div class="col-md-4 col-12 mt-3">
+                    <div class="card chart-card bradius-3 h-100">
+                        <div class="card-body text-dark p-4">
+                            <span class="card-title">Referrals</span>
+                            <div class="d-flex align-items-center mt-3">
+                                <h1 class="mb-0 me-2">10</h1>
+                                <span class="text-yellowgreen-100">55.6%</span>
+                            </div>
+                            <div class="background-yellowgreen-100 py-2 px-3 bradius-1 text-end mt-3">
+                                <a class="text-decoration-none text-dark" href="#">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--visits Card-->
+                <div class="col-md-4 col-12 mt-3">
+                    <div class="card chart-card bradius-3 h-100">
+                        <div class="card-body text-dark p-4">
+                            <span class="card-title">Visits</span>
+                            <div class="d-flex align-items-center mt-3">
+                                <h1 class="mb-0 me-2">110</h1>
+                                <span class="text-yellowgreen-100">55.6%</span>
+                            </div>
+                            <div class="background-yellowgreen-100 py-2 px-3 bradius-1 text-end mt-3">
+                                <a class="text-decoration-none text-dark" href="#">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Conversation Rate Card-->
+                <div class="col-md-4 col-12 mt-3">
+                    <div class="card chart-card bradius-3 h-100">
+                        <div class="card-body text-dark p-4">
+                            <span class="card-title">Conversation Rate</span>
+                            <div class="d-flex align-items-center mt-3">
+                                <h1 class="mb-0 me-2">6.8%</h1>
+                                <span class="text-yellowgreen-100">55.6%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row mt-5">
+                <h4 class="fw-semibold text-dark mb-0">All Time</h4>
+                <!--Referrals Card-->
+                <div class="col-md-3 col-12 mt-4">
+                    <div class="card chart-card bradius-3 h-100">
+                        <div class="card-body text-dark p-4">
+                            <span class="card-title">Referrals</span>
+                            <div class="d-flex align-items-center mt-3">
+                                <h1 class="mb-0 me-2">10</h1>
+                                <span class="text-yellowgreen-100">55.6%</span>
+                            </div>
+                            <div class="background-yellowgreen-100 py-2 px-3 bradius-1 text-end mt-3">
+                                <a class="text-decoration-none text-dark" href="#">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--visits Card-->
+                <div class="col-md-3 col-12 mt-4">
+                    <div class="card chart-card bradius-3 h-100">
+                        <div class="card-body text-dark p-4">
+                            <span class="card-title">Visits</span>
+                            <div class="d-flex align-items-center mt-3">
+                                <h1 class="mb-0 me-2">110</h1>
+                                <span class="text-yellowgreen-100">55.6%</span>
+                            </div>
+                            <div class="background-yellowgreen-100 py-2 px-3 bradius-1 text-end mt-3">
+                                <a class="text-decoration-none text-dark" href="#">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Conversation Rate Card-->
+                <div class="col-md-3 col-12 mt-4">
+                    <div class="card chart-card bradius-3 h-100">
+                        <div class="card-body text-dark p-4">
+                            <span class="card-title">Conversation Rate</span>
+                            <div class="d-flex align-items-center mt-3">
+                                <h1 class="mb-0 me-2">6.8%</h1>
+                                <span class="text-yellowgreen-100">55.6%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--unpaid referrals Card-->
+                <div class="col-md-3 col-12 mt-4">
+                    <div class="card chart-card bradius-3 h-100">
+                        <div class="card-body text-dark p-4">
+                            <span class="card-title">Unpaid referrals</span>
+                            <div class="d-flex align-items-center mt-3">
+                                <h1 class="mb-0 me-2">20</h1>
+                                <span class="text-yellowgreen-100">55.6%</span>
+                            </div>
+                            <div class="background-yellowgreen-100 py-2 px-3 bradius-1 text-end mt-3">
+                                <a class="text-decoration-none text-dark" href="#">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--unpaid referrals Card-->
+                <div class="col-md-3 col-12 mt-4">
+                    <div class="card chart-card bradius-3 h-100">
+                        <div class="card-body text-dark p-4">
+                            <span class="card-title">Paid referrals</span>
+                            <div class="d-flex align-items-center mt-3">
+                                <h1 class="mb-0 me-2">120</h1>
+                                <span class="text-yellowgreen-100">55.6%</span>
+                            </div>
+                            <div class="background-yellowgreen-100 py-2 px-3 bradius-1 text-end mt-3">
+                                <a class="text-decoration-none text-dark" href="#">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Total Earning Card-->
+                <div class="col-md-9 col-12 mt-4">
+                    <div class="card chart-card bradius-3 h-100">
+                        <div class="card-body text-dark p-4">
+                            <span class="card-title">Total Earning</span>
+                            <div class="d-flex align-items-center mt-3">
+                                <h1 class="mb-0 me-2">$6000.00</h1>
+                                <span class="text-yellowgreen-100">55.6%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row mt-5">
+                <h4 class="fw-semibold text-dark">Recent Referral Activity</h4>
+                <div class="col-12 mt-3">
+                    <div class="bradius-3 table-responsive" style="overflow: scroll;">
+                        <table class="table mb-0 custom-table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Reference</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Date</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">620468</th>
+                                <td>$8.00</td>
+                                <td class="text-nowrap">My test product</td>
+                                <td><span class="text-yellowgreen-100">Paid</span></td>
+                                <td class="text-nowrap">March 05, 2024 <span>4:20 PM</span></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">620468</th>
+                                <td>$12.00</td>
+                                <td>My test product</td>
+                                <td><span class="text-red-100">Unpaid</span></td>
+                                <td>March 05, 2024 <span>4:20 PM</span></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">620468</th>
+                                <td>$18.00</td>
+                                <td>My test product</td>
+                                <td><span class="text-yellowgreen-100">Paid</span></td>
+                                <td>March 05, 2024 <span>4:20 PM</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
