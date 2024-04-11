@@ -17,9 +17,9 @@
     <!--Menu Section Start-->
     <section id="menuSection">
         <div class="hidden-bg">
+            <!--Left Side Menu Start-->
             <div class="left-menu-box h-100">
                 <div class="h-100 w-100">
-                    <!-- <a class="menu-item text-whitesmoke text-decoration-none">Dashboard</a> -->
                     <nav class="nav flex-column w-100">
                         <a class="menu-item nav-link w-100 bradius-2 description mb-3 active" aria-current="page" href="#">Dashboard</a>
                         <a class="menu-item nav-link w-100 bradius-2 description mb-3" href="#">Report</a>
@@ -30,12 +30,94 @@
                     </nav>
                 </div>
             </div>
+
+            <!--Right Side Menu Start-->
+            <div class="right-item-box d-md-block d-none h-100">
+                <div class="h-100">
+
+                    <div class="card blog-card">
+                        <div class="card-body text-dark p-3">
+                            <div class="background-yellowgreen-100 bradius-3 p-3">
+                                <!-- <div class="d-flex justify-content-end">
+                                    <img height="80px" src="./assets/icons/play_icon.svg">
+                                </div> -->
+                                <h4 class="card-title text-uppercase fw-bold">
+                                    Participants
+                                </h4>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ad deleniti.</p>
+                                <div class="d-flex">
+                                    <img class="Participant-user-icon bradius-2" height="42px" src="./assets/icons/user_icon.webp">
+                                    <img class="Participant-user-icon bradius-2 margin-nagative" height="42px" src="./assets/icons/user_icon.webp">
+                                    <img class="Participant-user-icon bradius-2 margin-nagative" height="42px" src="./assets/icons/user_icon.webp">
+                                    <img class="Participant-user-icon bradius-2 margin-nagative" height="42px" src="./assets/icons/user_icon.webp">
+                                    <span class="badge background-whitesmoke text-dark Participant-user-icon bradius-2 margin-nagative fs-6 fw-normal d-flex align-items-center">100+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card blog-card mt-4">
+                        <div class="card-body text-yellowgreen-100 p-3">
+                            <h4 class="card-title text-uppercase fw-bold">
+                                Details
+                            </h4>
+                            <div class="mt-4">
+                                <svg viewBox="-10 -10 220 220">
+                                    <!-- First chart (smaller) -->
+                                    <circle id="circle1" cx="100" cy="100" r="100" fill="none" stroke="#092228" stroke-width="10" stroke-dasharray="627" stroke-dashoffset="377" >
+                                      <animate attributeName="stroke-dashoffset" from="377" to="0" dur="2s" fill="freeze" />
+                                    </circle>
+                                
+                                    <!-- Second chart (middle) -->
+                                    <circle id="circle2" cx="100" cy="100" r="70" fill="none" stroke="#092228" stroke-width="10" stroke-dasharray="439" stroke-dashoffset="307" >
+                                      <animate attributeName="stroke-dashoffset" from="307" to="0" dur="2s" fill="freeze" />
+                                    </circle>
+                                
+                                    <!-- Third chart (larger) -->
+                                    <circle id="circle3" cx="100" cy="100" r="40" fill="none" stroke="#092228" stroke-width="10" stroke-dasharray="251" stroke-dashoffset="201" >
+                                      <animate attributeName="stroke-dashoffset" from="201" to="0" dur="2s" fill="freeze" />
+                                    </circle>
+                                    
+                                    <!-- Completion indicators -->
+                                    <circle id="completion1" cx="100" cy="100" r="100" fill="none" stroke="#72bf01" stroke-width="10" stroke-dasharray="627" stroke-dashoffset="0" >
+                                      <animate attributeName="stroke-dashoffset" from="627" to="160" dur="2s" fill="freeze" />
+                                    </circle>
+                                    <circle id="completion2" cx="100" cy="100" r="70" fill="none" stroke="#72bf01" stroke-width="10" stroke-dasharray="439" stroke-dashoffset="0" >
+                                      <animate attributeName="stroke-dashoffset" from="439" to="200" dur="2s" fill="freeze" />
+                                    </circle>
+                                    <circle id="completion3" cx="100" cy="100" r="40" fill="none" stroke="#72bf01" stroke-width="10" stroke-dasharray="251" stroke-dashoffset="0" >
+                                      <animate attributeName="stroke-dashoffset" from="251" to="180" dur="2s" fill="freeze" />
+                                    </circle>
+                                </svg>
+                                <!-- Text labels container -->
+                                <div class="mt-4">
+                                    <p id="label1" class="section-description mb-2">Referrals: 0</p>
+                                    <p id="label2" class="section-description mb-2">Paid Referrals: 0</p>
+                                    <p id="label3" class="section-description mb-0">Unpaid Referrals: 0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <span class="text-whitesmoke-50 description"><small>&copy; 2024 "Statement Genie"</small></span><br>
+                        <span class="text-whitesmoke-50 description"><small>by FORTUNE ARC LTD</small></span>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
     <!--Main Body Content Start-->
     <section id="bodyContent">
         <div class="main-container">
-            <button id="menuButton" class="btn menu-button py-2 px-3 text-uppercase d-flex align-items-center p-0"><img class="icon me-2" height="24px" src="./assets/icons/menu_icon_light.svg">Menu</button>
+            <!--Nav Bar Start-->
+            <div class="d-flex justify-content-between">
+                <button id="menuButton" class="btn menu-button py-2 px-3 text-uppercase d-flex align-items-center p-0"><img class="icon me-2" height="24px" src="./assets/icons/menu_icon_light.svg">Menu</button>
+                <a class="" href="#"><img class="affiliate-user-icon bradius-2" height="42px" src="./assets/icons/user_icon.webp"></a>
+            </div>
+
+            <!--Dashboard Content Start-->
         </div>
     </section>
 

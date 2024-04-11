@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0 24px;
@@ -26,7 +25,7 @@ body {
     border-radius: var(--bradius-5);
     background: var(--color-whitesmoke);
     transition: 0.8s ease;
-    
+
 }
 
 .main-container::-webkit-scrollbar {
@@ -34,15 +33,23 @@ body {
     display: none;
 }
 
-.left-menu-box {
+.hidden-bg .left-menu-box {
     position: absolute;
     top: 100px;
     left: 0px;
     width: 15%;
 }
+
 .custom-bottom-nav {
     position: absolute;
     bottom: 180px !important;
+}
+
+.hidden-bg .right-item-box {
+    position: absolute;
+    top: 24px;
+    right: 48px;
+    width: 18%;
 }
 
 /* .main-container::-webkit-scrollbar-track {
@@ -62,6 +69,7 @@ body {
     transform: translate(20%, 0px) translateY(0%) rotate(0deg);
     border-radius: var(--bradius-5);
 }
+
 @media only screen and (max-width:1280px) {
     .main-container.shrink {
         transform: translate(20%, 0px) translateY(0%) rotate(0deg);
@@ -80,16 +88,19 @@ body {
         height: 94vh;
         padding: 18px;
     }
+
     .main-container.shrink {
         width: 100%;
         transform: translate(60%, 0px) translateY(0%) rotate(0deg);
     }
-    .left-menu-box {
+
+    .hidden-bg .left-menu-box {
         position: absolute;
         top: 100px;
         left: 0px;
         width: 46%;
     }
+
     .custom-bottom-nav {
         position: absolute;
         /* bottom: 180px !important; */
@@ -125,19 +136,44 @@ body {
     transition: var(--transition-md);
 }
 
-
-.menu-item {
+.nav .menu-item {
     border: 1px solid var(--color-yellowgreen-100);
     color: var(--color-whitesmoke);
     background-color: var(--color-dark);
+    transition: var(--transition-md);
 }
 
-.menu-item:hover {
+.nav .menu-item:hover {
     color: var(--color-dark);
     background-color: var(--color-yellowgreen-100);
+    transition: var(--transition-md);
 }
 
-.menu-item.active {
+.nav .menu-item.active {
     color: var(--color-dark);
     background-color: var(--color-yellowgreen-100);
+    transition: var(--transition-md);
 }
+
+.affiliate-user-icon {
+    border: 1px solid var(--color-dark);
+    transition: var(--transition-md);
+}
+.affiliate-user-icon:hover {
+    border: 1px solid var(--color-yellowgreen-100);
+    transition: var(--transition-md);
+}
+
+.Participant-user-icon {
+    border: 2px solid var(--color-yellowgreen-100);
+}
+
+.margin-nagative {
+    margin-left: -12px;
+}
+
+/*SVG chart */
+svg {
+    width: 100%;
+    height: auto;
+  }
