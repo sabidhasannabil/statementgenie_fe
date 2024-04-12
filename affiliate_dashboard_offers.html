@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Statement Genie</title>
-  <link rel="icon" type="image/x-icon" href="./assets/fav_icon/fav_icon.ico">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com./css2?family=Baloo 2:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="./css/style_main.css" rel="stylesheet" />
-  <link href="./css/dashboard.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statement Genie</title>
+    <link rel="icon" type="image/x-icon" href="./assets/fav_icon/fav_icon.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com./css2?family=Baloo 2:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="./css/style_main.css" rel="stylesheet" />
+    <link href="./css/dashboard.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -20,10 +20,16 @@
             <!--Left Side Menu Start-->
             <div class="left-menu-box h-100">
                 <div class="h-100 w-100">
+                    <div class="mb-5">
+                        <img height="40px" src="./assets/logos/logo.svg">
+                    </div>
                     <nav class="nav flex-column w-100">
-                        <a class="menu-item nav-link w-100 bradius-2 description mb-3" aria-current="page" href="affiliate_dashboard.html">Dashboard</a>
-                        <a class="menu-item nav-link w-100 bradius-2 description mb-3 active" href="affiliate_dashboard_offers.html">Offers</a>
-                        <a class="menu-item nav-link w-100 bradius-2 description mb-3" href="affiliate_dashboard_payout.html">Pay Out</a>
+                        <a class="menu-item nav-link w-100 bradius-2 description mb-3" aria-current="page"
+                            href="affiliate_dashboard.html">Dashboard</a>
+                        <a class="menu-item nav-link w-100 bradius-2 description mb-3 active"
+                            href="affiliate_dashboard_offers.html">Offers</a>
+                        <a class="menu-item nav-link w-100 bradius-2 description mb-3"
+                            href="affiliate_dashboard_payout.html">Pay Out</a>
                     </nav>
                     <nav class="nav custom-bottom-nav w-100">
                         <a class="menu-item nav-link w-100 bradius-2 description mb-3" href="#">Log Out</a>
@@ -40,13 +46,19 @@
                                 <h4 class="card-title text-uppercase fw-bold">
                                     Participants
                                 </h4>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ad deleniti.</p>
+                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ad
+                                    deleniti.</p>
                                 <div class="d-flex">
-                                    <img class="Participant-user-icon bradius-2" height="42px" src="./assets/icons/user_icon.webp">
-                                    <img class="Participant-user-icon bradius-2 margin-nagative" height="42px" src="./assets/icons/user_icon.webp">
-                                    <img class="Participant-user-icon bradius-2 margin-nagative" height="42px" src="./assets/icons/user_icon.webp">
-                                    <img class="Participant-user-icon bradius-2 margin-nagative" height="42px" src="./assets/icons/user_icon.webp">
-                                    <span class="badge background-whitesmoke text-dark Participant-user-icon bradius-2 margin-nagative fs-6 fw-normal d-flex align-items-center">100+</span>
+                                    <img class="Participant-user-icon bradius-2" height="42px"
+                                        src="./assets/icons/user_icon.webp">
+                                    <img class="Participant-user-icon bradius-2 margin-nagative" height="42px"
+                                        src="./assets/icons/user_icon.webp">
+                                    <img class="Participant-user-icon bradius-2 margin-nagative" height="42px"
+                                        src="./assets/icons/user_icon.webp">
+                                    <img class="Participant-user-icon bradius-2 margin-nagative" height="42px"
+                                        src="./assets/icons/user_icon.webp">
+                                    <span
+                                        class="badge background-whitesmoke text-dark Participant-user-icon bradius-2 margin-nagative fs-6 fw-normal d-flex align-items-center">100+</span>
                                 </div>
                             </div>
                         </div>
@@ -60,29 +72,41 @@
                             <div class="mt-4">
                                 <svg viewBox="-10 -10 220 220">
                                     <!-- First chart (smaller) -->
-                                    <circle id="circle1" cx="100" cy="100" r="100" fill="none" stroke="#092228" stroke-width="10" stroke-dasharray="627" stroke-dashoffset="377" >
-                                      <animate attributeName="stroke-dashoffset" from="377" to="0" dur="2s" fill="freeze" />
+                                    <circle id="circle1" cx="100" cy="100" r="100" fill="none" stroke="#092228"
+                                        stroke-width="10" stroke-dasharray="627" stroke-dashoffset="377">
+                                        <animate attributeName="stroke-dashoffset" from="377" to="0" dur="2s"
+                                            fill="freeze" />
                                     </circle>
-                                
+
                                     <!-- Second chart (middle) -->
-                                    <circle id="circle2" cx="100" cy="100" r="70" fill="none" stroke="#092228" stroke-width="10" stroke-dasharray="439" stroke-dashoffset="307" >
-                                      <animate attributeName="stroke-dashoffset" from="307" to="0" dur="2s" fill="freeze" />
+                                    <circle id="circle2" cx="100" cy="100" r="70" fill="none" stroke="#092228"
+                                        stroke-width="10" stroke-dasharray="439" stroke-dashoffset="307">
+                                        <animate attributeName="stroke-dashoffset" from="307" to="0" dur="2s"
+                                            fill="freeze" />
                                     </circle>
-                                
+
                                     <!-- Third chart (larger) -->
-                                    <circle id="circle3" cx="100" cy="100" r="40" fill="none" stroke="#092228" stroke-width="10" stroke-dasharray="251" stroke-dashoffset="201" >
-                                      <animate attributeName="stroke-dashoffset" from="201" to="0" dur="2s" fill="freeze" />
+                                    <circle id="circle3" cx="100" cy="100" r="40" fill="none" stroke="#092228"
+                                        stroke-width="10" stroke-dasharray="251" stroke-dashoffset="201">
+                                        <animate attributeName="stroke-dashoffset" from="201" to="0" dur="2s"
+                                            fill="freeze" />
                                     </circle>
-                                    
+
                                     <!-- Completion indicators -->
-                                    <circle id="completion1" cx="100" cy="100" r="100" fill="none" stroke="#72bf01" stroke-width="10" stroke-dasharray="627" stroke-dashoffset="0" >
-                                      <animate attributeName="stroke-dashoffset" from="627" to="160" dur="2s" fill="freeze" />
+                                    <circle id="completion1" cx="100" cy="100" r="100" fill="none" stroke="#72bf01"
+                                        stroke-width="10" stroke-dasharray="627" stroke-dashoffset="0">
+                                        <animate attributeName="stroke-dashoffset" from="627" to="160" dur="2s"
+                                            fill="freeze" />
                                     </circle>
-                                    <circle id="completion2" cx="100" cy="100" r="70" fill="none" stroke="#72bf01" stroke-width="10" stroke-dasharray="439" stroke-dashoffset="0" >
-                                      <animate attributeName="stroke-dashoffset" from="439" to="200" dur="2s" fill="freeze" />
+                                    <circle id="completion2" cx="100" cy="100" r="70" fill="none" stroke="#72bf01"
+                                        stroke-width="10" stroke-dasharray="439" stroke-dashoffset="0">
+                                        <animate attributeName="stroke-dashoffset" from="439" to="200" dur="2s"
+                                            fill="freeze" />
                                     </circle>
-                                    <circle id="completion3" cx="100" cy="100" r="40" fill="none" stroke="#72bf01" stroke-width="10" stroke-dasharray="251" stroke-dashoffset="0" >
-                                      <animate attributeName="stroke-dashoffset" from="251" to="180" dur="2s" fill="freeze" />
+                                    <circle id="completion3" cx="100" cy="100" r="40" fill="none" stroke="#72bf01"
+                                        stroke-width="10" stroke-dasharray="251" stroke-dashoffset="0">
+                                        <animate attributeName="stroke-dashoffset" from="251" to="180" dur="2s"
+                                            fill="freeze" />
                                     </circle>
                                 </svg>
                                 <!-- Text labels container -->
@@ -96,7 +120,8 @@
                     </div>
 
                     <div class="mt-4">
-                        <span class="text-whitesmoke-50 description"><small>&copy; 2024 "Statement Genie"</small></span><br>
+                        <span class="text-whitesmoke-50 description"><small>&copy; 2024 "Statement
+                                Genie"</small></span><br>
                         <span class="text-whitesmoke-50 description"><small>by FORTUNE ARC LTD</small></span>
                     </div>
 
@@ -109,40 +134,59 @@
     <section id="bodyContent">
         <div class="main-container">
             <!--Nav Bar Start-->
-            <div class="d-flex flex-lg-row flex-row-reverse justify-content-between sticky-top background-whitesmoke pt-4 pb-3">
+            <div
+                class="d-flex flex-lg-row flex-row-reverse justify-content-between sticky-top background-whitesmoke pt-4 pb-3">
                 <div class="col-auto">
-                    <button id="menuButton" class="btn menu-button py-2 px-3 text-uppercase d-flex align-items-center p-0"><img class="icon me-2" height="24px" src="./assets/icons/menu_icon_light.svg">Menu</button>
+                    <button id="menuButton"
+                        class="btn menu-button py-2 px-3 text-uppercase d-flex align-items-center p-0"><img
+                            class="icon me-2" height="24px" src="./assets/icons/menu_icon_light.svg">Menu</button>
                 </div>
                 <div class="col-auto">
-                    <a class="dash-user-icon d-flex align-items-center text-decoration-none" href="#"><img class="affiliate-user-icon bradius-2 me-2" height="42px" src="./assets/icons/user_icon.webp"><h6 class="mb-0">Sabid Hasan<br>Nabil</h6></a>
-                    
+                    <a class="dash-user-icon d-flex align-items-center text-decoration-none" href="#"><img
+                            class="affiliate-user-icon bradius-2 me-2" height="42px"
+                            src="./assets/icons/user_icon.webp">
+                        <h6 class="mb-0">Sabid Hasan<br>Nabil</h6>
+                    </a>
+
                 </div>
             </div>
 
             <!--Dashboard Content Start-->
-            <div class="d-md-flex justify-content-between align-items-center background-dark text-whitesmoke bradius-5 p-4 mt-4">
+            <div
+                class="d-md-flex justify-content-between align-items-center background-dark text-whitesmoke bradius-5 p-4 mt-4">
                 <h3 class="mb-0">Your Affiliate Link</h3>
                 <div class="btn-group d-flex flex-md-row flex-column mt-md-0 mt-4">
-                    <input type="text" value="https://www.example.com" id="urlField" class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3">
-                    <button class="btn primary-button text-nowrap text-dark bradius-2 mt-md-0 mt-3" onclick="copyURL()">Copy & Share</button>
+                    <input type="text" value="https://www.example.com" id="urlField"
+                        class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3">
+                    <button class="btn primary-button text-nowrap text-dark bradius-2 mt-md-0 mt-3"
+                        onclick="copyURL()">Copy & Share</button>
                 </div>
             </div>
             <!--Create Link with Coupon-->
             <div class="d-flex flex-column background-dark text-whitesmoke bradius-5 p-4 mt-4">
                 <h3 class="mb-4">Create Affiliate Link With Coupon</h3>
                 <div class="btn-group d-flex flex-md-row flex-column mt-md-0">
-                    <input type="text" value="https://www.example.com" id="urlField" class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3">
-                    <input type="text" id="inputCoupon" class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3 mt-md-0 mt-3" placeholder="Coupon Code">
-                    <button class="btn primary-button text-nowrap text-dark bradius-2 mt-md-0 mt-3" onclick="copyUR()">Create & Copy</button>
+                    <input type="text" value="https://www.example.com" id="urlField"
+                        class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3">
+                    <input type="text" id="inputCoupon"
+                        class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3 mt-md-0 mt-3"
+                        placeholder="Coupon Code">
+                    <button class="btn primary-button text-nowrap text-dark bradius-2 mt-md-0 mt-3"
+                        onclick="copyUR()">Create & Copy</button>
                 </div>
             </div>
             <!--Create Custom Link with Coupon-->
             <div class="d-flex flex-column background-dark text-whitesmoke bradius-5 p-4 mt-4">
                 <h3 class="mb-4">Create Custom Affiliate Link With Coupon</h3>
                 <div class="btn-group d-flex flex-md-row flex-column mt-md-0">
-                    <input type="text" id="customUrlField" class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3" placeholder="Custom Link">
-                    <input type="text" id="inputCoupon" class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3 mt-md-0 mt-3" placeholder="Coupon Code">
-                    <button class="btn primary-button text-nowrap text-dark bradius-2 mt-md-0 mt-3" onclick="copyUR()">Create & Copy</button>
+                    <input type="text" id="customUrlField"
+                        class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3"
+                        placeholder="Custom Link">
+                    <input type="text" id="inputCoupon"
+                        class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3 mt-md-0 mt-3"
+                        placeholder="Coupon Code">
+                    <button class="btn primary-button text-nowrap text-dark bradius-2 mt-md-0 mt-3"
+                        onclick="copyUR()">Create & Copy</button>
                 </div>
             </div>
             <!--Description-->
@@ -154,17 +198,13 @@
         </div>
     </section>
 
-
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"
-    referrerpolicy="no-referrer"></script>
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
-  <!-- Link to your JavaScript file -->
-  <script src="./js/dashboard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- Link to your JavaScript file -->
+    <script src="./js/dashboard.js"></script>
 </body>
 
 </html>
