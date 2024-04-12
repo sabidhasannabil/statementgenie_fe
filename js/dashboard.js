@@ -7,6 +7,14 @@ menuBtn.onclick = function() {
     mainContainer.classList.toggle('shrink')
     menuBtn.classList.toggle('active')
 }
+//Url Copy
+function copyURL() {
+    var copyText = document.getElementById("urlField");
+    copyText.select(); 
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    alert("Copied the URL: " + copyText.value);
+}
 
 // Animation for text labels
 const label1 = document.getElementById('label1');

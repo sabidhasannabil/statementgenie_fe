@@ -22,15 +22,15 @@
                 <div class="h-100 w-100">
                     <nav class="nav flex-column w-100">
                         <a class="menu-item nav-link w-100 bradius-2 description mb-3" aria-current="page" href="affiliate_dashboard.html">Dashboard</a>
-                        <a class="menu-item nav-link w-100 bradius-2 description mb-3" href="affiliate_dashboard_offers.html">Offers</a>
-                        <a class="menu-item nav-link w-100 bradius-2 description mb-3 active" href="affiliate_dashboard_payout.html">Pay Out</a>
+                        <a class="menu-item nav-link w-100 bradius-2 description mb-3 active" href="affiliate_dashboard_offers.html">Offers</a>
+                        <a class="menu-item nav-link w-100 bradius-2 description mb-3" href="affiliate_dashboard_payout.html">Pay Out</a>
                     </nav>
                     <nav class="nav custom-bottom-nav w-100">
                         <a class="menu-item nav-link w-100 bradius-2 description mb-3" href="#">Log Out</a>
                     </nav>
                 </div>
             </div>
-            <!--Right Side Menu Web Only Start-->
+            <!--Right Side Menu Start-->
             <div class="right-item-box d-lg-block d-none h-100">
                 <div class="h-100">
 
@@ -121,84 +121,34 @@
 
             <!--Dashboard Content Start-->
             <div class="d-md-flex justify-content-between align-items-center background-dark text-whitesmoke bradius-5 p-4 mt-4">
-                <h3 class="mb-0">Payout</h3>
+                <h3 class="mb-0">Your Affiliate Link</h3>
                 <div class="btn-group d-flex flex-md-row flex-column mt-md-0 mt-4">
-                    <div class="me-md-3 me-0">
-                        <label for="totalBalance" class="text-nowrap"><small>Balance</small></label>
-                        <input type="text" value="£400.00" id="totalBalance" readonly class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url">
-                    </div>
-                    <div class="me-md-3 me-0 mt-md-0 mt-3">
-                        <label for="availableToPayout" class="text-nowrap"><small>Available To Payout</small></label>
-                        <input type="text" value="£300.00" id="availableToPayout" readonly class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url">
-                    </div>
-                    <button class="btn primary-button text-dark bradius-2 mt-md-0 mt-3">Withdrawal</button>
+                    <input type="text" value="https://www.example.com" id="urlField" class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3">
+                    <button class="btn primary-button text-nowrap text-dark bradius-2 mt-md-0 mt-3" onclick="copyURL()">Copy & Share</button>
                 </div>
             </div>
-
-            <div class="mt-2">
-                <p class="text-dark"><small>The minimum withdrawal threshold is set at £50.00. For withdrawals falling below £100.00, an additional charge of £2.00 applies per transaction.</small></p>
-            </div>
-
-            <div class="row mt-5">
-                <h4 class="fw-semibold text-dark">Payout History</h4>
-                <div class="col-12 mt-3">
-                    <div class="bradius-3 table-responsive" style="overflow: scroll;">
-                        <table class="table mb-0 custom-table">
-                            <thead>
-                              <tr>
-                                <th scope="col">Date</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Time</th>
-                                <th scope="col">Fees</th>
-                                <th scope="col">Total</th>
-                                <th scope="col">Action</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row" class="text-nowrap">March 05, 2024</th>
-                                <td><span class="text-nowrap text-red-100">Processing</span></td>
-                                <td class="text-nowrap">4:20 PM</td>
-                                <td><span class="text-nowrap text-red-100">£ 2.00</span></td>
-                                <td class="text-nowrap">£ 50.00</td>
-                                <td class="text-nowrap"><button class="btn text-red-100 p-0 m-0"><img height="32px" src="./assets/icons/error.svg">Cancel</button></td>
-                              </tr>
-                              <tr>
-                                <th scope="row" class="text-nowrap">March 05, 2024</th>
-                                <td><span class="text-nowrap text-yellowgreen-100">Successful</span></td>
-                                <td class="text-nowrap">4:20 PM</td>
-                                <td><span class="text-nowrap">£ 0.00</span></td>
-                                <td class="text-nowrap">£ 150.00</td>
-                                <td></td>
-                              </tr>
-                              <tr>
-                                <th scope="row" class="text-nowrap">March 05, 2024</th>
-                                <td><span class="text-nowrap text-yellowgreen-100">Successful</span></td>
-                                <td class="text-nowrap">4:20 PM</td>
-                                <td><span class="text-nowrap">£ 0.00</span></td>
-                                <td class="text-nowrap">£ 100.00</td>
-                                <td></td>
-                              </tr>
-                              <tr>
-                                <th scope="row" class="text-nowrap">March 05, 2024</th>
-                                <td><span class="text-nowrap text-yellowgreen-100">Successful</span></td>
-                                <td class="text-nowrap">4:20 PM</td>
-                                <td><span class="text-nowrap text-red-100">£ 2.00</span></td>
-                                <td class="text-nowrap">£ 80.00</td>
-                                <td></td>
-                              </tr>
-                              <tr>
-                                <th scope="row" class="text-nowrap">March 05, 2024</th>
-                                <td><span class="text-nowrap text-yellowgreen-100">Successful</span></td>
-                                <td class="text-nowrap">4:20 PM</td>
-                                <td><span class="text-nowrap text-red-100">£ 2.00</span></td>
-                                <td class="text-nowrap">£ 80.00</td>
-                                <td></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
+            <!--Create Link with Coupon-->
+            <div class="d-flex flex-column background-dark text-whitesmoke bradius-5 p-4 mt-4">
+                <h3 class="mb-4">Create Affiliate Link With Coupon</h3>
+                <div class="btn-group d-flex flex-md-row flex-column mt-md-0">
+                    <input type="text" value="https://www.example.com" id="urlField" class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3">
+                    <input type="text" id="inputCoupon" class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3 mt-md-0 mt-3" placeholder="Coupon Code">
+                    <button class="btn primary-button text-nowrap text-dark bradius-2 mt-md-0 mt-3" onclick="copyUR()">Create & Copy</button>
                 </div>
+            </div>
+            <!--Create Custom Link with Coupon-->
+            <div class="d-flex flex-column background-dark text-whitesmoke bradius-5 p-4 mt-4">
+                <h3 class="mb-4">Create Custom Affiliate Link With Coupon</h3>
+                <div class="btn-group d-flex flex-md-row flex-column mt-md-0">
+                    <input type="text" id="customUrlField" class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3" placeholder="Custom Link">
+                    <input type="text" id="inputCoupon" class="form-control form-control-lg border-0 shadow-none description bradius-2 copy-url me-3 mt-md-0 mt-3" placeholder="Coupon Code">
+                    <button class="btn primary-button text-nowrap text-dark bradius-2 mt-md-0 mt-3" onclick="copyUR()">Create & Copy</button>
+                </div>
+            </div>
+            <!--Description-->
+            <div class="text-dark mt-5">
+                <h4 class="mb-4">After every 10 paid Referrals, Commission rate will increase 2.5%</h4>
+                <h4 class="mb-4">Users can get a 5% Discount with your coupon code.</h4>
             </div>
 
         </div>
