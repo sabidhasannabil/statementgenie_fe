@@ -103,7 +103,7 @@ body {
         top: 18px;
         left: 18px;
         width: 91.2%;
-        height: 95.5vh;
+        height: 88.5vh;
         padding-left: 18px;
         padding-right: 18px;
         padding-bottom: 18px;
@@ -116,7 +116,7 @@ body {
 
     .hidden-bg .left-menu-box {
         position: absolute;
-        top: 100px;
+        top: 44px;
         left: 49%;
         width: 46%;
     }
