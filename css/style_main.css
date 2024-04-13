@@ -889,3 +889,18 @@ body::-webkit-scrollbar-thumb {
   border-color: var(--color-yellowgreen-100);
   box-shadow: 0 0 0 0.25rem #73bf0136;
 }
+
+.check-input-custom {
+  background-color: var(--color-whitesmoke);
+  border-color: var(--color-yellowgreen-100);
+}
+
+.check-input-custom:checked {
+  background-color: var(--color-yellowgreen-100);
+  border-color: var(--color-yellowgreen-100);
+}
+
+.check-input-custom:focus {
+  border-color: var(--color-yellowgreen-100);
+  box-shadow: 0 0 0 0.25rem #73bf0136;
+}
