@@ -11,6 +11,7 @@ const csvTable = document.getElementById('csvTable');
 
 // Trigger file input when the upload button is clicked
     uploadBtn.addEventListener('click', function() {
+        pdfUpload.setAttribute('multiple', 'multiple');
         pdfUpload.click();
     });
 
@@ -121,5 +122,3 @@ filterBtn.addEventListener('click', function () {
             console.error('There was a problem with the fetch operation:', error);
         });
 });
-
-// Remember to include Bootstrap JS if you want to use any of its JS-based components
