@@ -388,11 +388,13 @@ body::-webkit-scrollbar-thumb {
 .section-heading-1 {
   font-size: 36px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .section-heading-2 {
   font-size: 32px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .blog-title {
@@ -403,6 +405,7 @@ body::-webkit-scrollbar-thumb {
 .section-description {
   font-size: 18px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .description {
